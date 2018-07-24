@@ -1,0 +1,326 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent !important;
+  /*设置点击高亮效果设置透明则可以达到去除高亮*/
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: "MicroSoft YaHei", sans-serif;
+  /* 备用默认字体 */
+  color: #333;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: #333;
+}
+input {
+  border: none;
+  outline: none;
+  /* 移动端清除浏览器默认样式 */
+  -webkit-appearance: none;
+}
+.container {
+  margin: 0 auto;
+  max-width: 640px;
+  background-color: #ccc;
+  padding: 40px 0 50px 0;
+}
+#header {
+  position: fixed;
+  max-width: 640px;
+  width: 100%;
+  /* // 背景变透明 */
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  height: 40px;
+  z-index: 8;
+  top: 0;
+}
+#header > .top-logo {
+  width: 60px;
+  height: 35px;
+  background-image: url(../images/sprites.png);
+  background-position: 0 -106px;
+  background-size: 200px 200px;
+  margin-top: 5px;
+}
+#header > form {
+  flex: 1;
+  height: 100%;
+  padding-top: 5px;
+  position: relative;
+}
+#header > form > input {
+  height: 30px;
+  width: 100%;
+  border-radius: 35px;
+  padding-left: 25px;
+}
+#header > form > span {
+  width: 26px;
+  height: 34px;
+  background: url(../images/sprites.png);
+  background-position: -118px 8px;
+  background-size: 200px 200px;
+  position: absolute;
+}
+#header > .top-login {
+  width: 50px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+}
+#header > .top-login a {
+  color: #fff;
+}
+#header > .top-back {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/sprites.png);
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: -20px 0;
+  padding: 10px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+#header > .top-back > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#header > .top-more {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/sprites.png);
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: -60px 0;
+  padding: 10px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+#header > .top-more > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+  max-width: 640px;
+  height: 50px;
+}
+#footer > ul {
+  display: flex;
+  width: 100%;
+}
+#footer > ul > li {
+  width: 25%;
+}
+#footer > ul > li > a {
+  display: inline-block;
+  width: 100%;
+}
+#footer > ul > li > a > img {
+  width: 65px;
+  height: 50px;
+}
+body {
+  height: 900px;
+  background-color: #fff;
+}
+#banner img {
+  width: 100%;
+  height: 175px;
+}
+#banner .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+#banner .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#classify {
+  background-color: #fff;
+  margin-top: -5px;
+}
+#classify ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+#classify ul > li {
+  width: 25%;
+  text-align: center;
+  margin: 10px 0;
+}
+#classify ul > li a > img {
+  width: 40px;
+  height: 40px;
+}
+#classify ul > li a > P {
+  font-size: 12PX;
+}
+#seckill {
+  margin: 10px;
+  padding: 6px;
+  box-shadow: 0 0 3px #000;
+  background-color: #fff;
+}
+#seckill > .time {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  position: relative;
+  background-color: #fff;
+}
+#seckill > .time > .countDown {
+  float: left;
+}
+#seckill > .time > .countDown .sk-icon {
+  background: url('../images/seckill-icon.png') no-repeat;
+  background-size: 20px 25px;
+  width: 20px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+}
+#seckill > .time > .countDown .sk-name {
+  color: #f10125;
+  margin-left: 25px;
+}
+#seckill > .time > .countDown .sk-time {
+  margin: 0 10px;
+}
+#seckill > .time > .countDown .sk-time > span {
+  background-color: #333333;
+  font-size: 14px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 14px;
+}
+#seckill > .time > .countDown .sk-time > span:nth-child(3n) {
+  background-color: #fff;
+  color: #000;
+}
+#seckill > .time > .more {
+  float: right;
+}
+#seckill > .product {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+#seckill > .product > div {
+  width: 33.333%;
+}
+#seckill > .product > div + div {
+  border-left: 1px solid #ccc;
+}
+#seckill > .product > div > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#seckill > .product > div > a img:first-child {
+  width: 70px;
+  height: 70px;
+}
+#seckill > .product > div > a img:nth-child(2) {
+  width: 110px;
+  height: 110px;
+}
+#seckill > .product > div > a img:last-child {
+  width: 110px;
+  height: 110px;
+}
+#seckill > .product > div > a > p:first-of-type {
+  font-size: 18px;
+  color: #f10125;
+}
+#superMarke {
+  margin: 10px;
+  padding-top: 6px;
+  box-shadow: 0 0 3px #000;
+  background-color: #fff;
+  overflow: hidden;
+}
+#superMarke > .marke-top {
+  width: 100%;
+  height: 36px;
+  border-bottom: 1px solid #ccc;
+}
+#superMarke > .marke-top > p {
+  margin-left: 10px;
+  border-left: 4px solid #f10125;
+  padding-left: 10px;
+  font-size: 20px;
+}
+#superMarke > .marke-content {
+  display: flex;
+}
+#superMarke > .marke-content > div {
+  width: 50%;
+  overflow: hidden;
+}
+#superMarke > .marke-content > div > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#superMarke > .marke-content > div:first-child {
+  border-right: 1px solid #ccc;
+}
+#superMarke > .marke-content > div:first-child img {
+  width: 160px;
+  height: 170px;
+}
+#superMarke > .marke-content > div:last-child {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#superMarke > .marke-content > div:last-child > a:first-child {
+  border-bottom: 1px solid #ccc;
+}
+#superMarke > .marke-content > div:last-child img {
+  width: 175px;
+  height: 96px;
+}

@@ -1,0 +1,107 @@
+// 引入公共样式文件
+@import 'base.less';
+// 初始化轮播图
+html,
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    background: #fff;
+    #header {
+        background-color: #e6e6e6;
+    } //   设置主体内容
+    #main {
+        background-color: #fff;
+        height: 100%;
+        >.main {
+            display: flex;
+            height: 100%;
+            >.left {
+                height: 100%;
+                width: 85px;
+                // padding: 45px 10px 40px 0;
+                >.swiper-wrapper {}
+                .swiper-slide {
+                    ul {
+                        width: 100%; // height: 100%;
+                        li {
+                            // height: 100%;
+                            background-color: #e6e6e6;
+                            font-size: 14px;
+                            display: block;
+                            text-align: center;
+                            >a {
+                                line-height: 46px;
+                            }
+                            &.active {
+                                width: 100%; // height: 100%;
+                                background-color: #fff;
+                                a {
+                                    color: @mainColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            >.right {
+                flex: 1;
+                height: 100%;
+                // padding: 45px 10px 50px 0;
+                .swiper-wrapper {
+                    height: 100%;
+                }
+                .swiper-slide {
+                    padding: 0 0 40px 0;
+                    h4 {
+                        margin: 10px 0;
+                    }
+                    ul {
+                        // height: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding-left: 20px;
+                        li {
+                            width: 33.333%;
+                            >a {
+                                >img {
+                                    width: 70px;
+                                    height: 70px;
+                                }
+                                >span {
+                                    width: 70px;
+                                    display: block;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

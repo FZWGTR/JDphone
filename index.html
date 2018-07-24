@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东M站首页</title>
+    <!-- 引入less -->
+    <link rel="stylesheet/less" href="less/index.less">
+    <!-- 引入编译less的js -->
+    <script src="lib/less/less.js"></script>
+
+      <!-- 引入轮播图的样式 -->
+      <link rel="stylesheet" href="swiper-4.3.3/dist/css/swiper.min.css">
+
+    <script src="js/jquery-3.0.0.min.js"></script>
+  
+</head>
+
+<body>
+    <!-- 版心container -->
+    <div class="container">
+        <!-- 顶部通栏 -->
+        <header id="header">
+            <div class="top-logo">
+                <a href="#"></a>
+            </div>
+            <form action="">
+                <span class="iconSearch"></span>
+                <input type="search" placeholder="请输入内容">
+            </form>
+            <div class="top-login">
+                <a href="#">登录</a>
+            </div>
+        </header>
+
+        <!-- 第一部分：轮播图 -->
+        <section id="banner">
+            <!-- <img src="images/l1.jpg" alt=""> -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/l1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/l2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/l3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/l4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/l5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/l6.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/l7.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/l8.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/l5.jpg" alt="">
+                    </div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+        <!-- 分类查询     -->
+        <section id="classify">
+            <!-- ul>(li>a[href="#"]>img[src="./images/nav{$}.png"]+p{京东超市})*8 -->
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav1.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav2.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav3.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav4.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav5.png" alt="">
+                        <p>京东超市</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav6.png" alt="">
+                        <p>京东超市</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav7.png" alt="">
+                        <p>京东超市</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav0.png" alt="">
+                        <p>京东超市</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 秒杀区域 -->
+        <section id="seckill">
+            <!-- 顶部倒计时 -->
+            <div class="time">
+                <!-- 顶部掌上秒杀部分 -->
+                <div class="countDown">
+                    <span class="sk-icon"></span>
+                    <span class="sk-name">掌上秒杀</span>
+                    <span class="sk-time">
+                        <span>1</span>
+                        <span>9</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                    </span>
+                </div>
+                <!-- 顶部更多部分 -->
+                <div class="more">
+                    <a href="#">更多></a>
+                </div>
+            </div>
+
+            <!-- 秒杀的商品 -->
+            <div class="product">
+                <div class="one">
+                    <a href="#">
+                        <img src="https://m.360buyimg.com/mobilecms/s140x140_jfs/t19165/148/979781441/232714/fc7c9a4c/5ab64e5fN98018640.jpg!q70.jpg.dpg">
+                        <p>¥1000.00</p>
+                        <p>
+                            <del>¥6000.00</del>
+                        </p>
+                    </a>
+
+                </div>
+                <div class="two">
+                    <a href="#">
+                        <img src="https://m.360buyimg.com/mobilecms/s220x220_jfs/t19966/26/2680759745/62612/f920c851/5b4d5f51Nb60afab1.jpg!q70.jpg">
+                        <p>¥9999.00</p>
+                        <p>
+                            <del>¥60000.00</del>
+                        </p>
+                    </a>
+
+                </div>
+                <div class="three">
+                    <a href="#">
+                        <img src="https://m.360buyimg.com/mobilecms/s220x220_jfs/t21892/155/818672379/127738/2a463d87/5b1907fdN81f28fc8.jpg!q70.jpg">
+                        <p>¥8880.00</p>
+                        <p>
+                            <del>¥9000.00</del>
+                        </p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 京东超市 -->
+        <section id="superMarke">
+            <div class="marke-top">
+                <p>京东超市</p>
+            </div>
+            <div class="marke-content">
+                <div class="left">
+                    <a href="#">
+                        <img src="images/cp1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="right">
+                    <a href="#">
+                        <img src="images/cp2.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/cp3.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 京东超市 -->
+        <section id="superMarke">
+            <div class="marke-top">
+                <p>京东超市</p>
+            </div>
+            <div class="marke-content">
+                <div class="left">
+                    <a href="#">
+                        <img src="images/cp1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="right">
+                    <a href="#">
+                        <img src="images/cp2.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/cp3.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+    <!-- 引入轮播图的js -->
+    <script src="swiper-4.3.3/dist/js/swiper.js"></script>
+
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>

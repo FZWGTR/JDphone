@@ -1,0 +1,232 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent !important;
+  /*设置点击高亮效果设置透明则可以达到去除高亮*/
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: "MicroSoft YaHei", sans-serif;
+  /* 备用默认字体 */
+  color: #333;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: #333;
+}
+input {
+  border: none;
+  outline: none;
+  /* 移动端清除浏览器默认样式 */
+  -webkit-appearance: none;
+}
+.container {
+  margin: 0 auto;
+  max-width: 640px;
+  background-color: #ccc;
+  padding: 40px 0 50px 0;
+}
+#header {
+  position: fixed;
+  max-width: 640px;
+  width: 100%;
+  /* // 背景变透明 */
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  height: 40px;
+  z-index: 8;
+  top: 0;
+}
+#header > .top-logo {
+  width: 60px;
+  height: 35px;
+  background-image: url(../images/sprites.png);
+  background-position: 0 -106px;
+  background-size: 200px 200px;
+  margin-top: 5px;
+}
+#header > form {
+  flex: 1;
+  height: 100%;
+  padding-top: 5px;
+  position: relative;
+}
+#header > form > input {
+  height: 30px;
+  width: 100%;
+  border-radius: 35px;
+  padding-left: 25px;
+}
+#header > form > span {
+  width: 26px;
+  height: 34px;
+  background: url(../images/sprites.png);
+  background-position: -118px 8px;
+  background-size: 200px 200px;
+  position: absolute;
+}
+#header > .top-login {
+  width: 50px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+}
+#header > .top-login a {
+  color: #fff;
+}
+#header > .top-back {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/sprites.png);
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: -20px 0;
+  padding: 10px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+#header > .top-back > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#header > .top-more {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/sprites.png);
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: -60px 0;
+  padding: 10px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+#header > .top-more > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+  max-width: 640px;
+  height: 50px;
+}
+#footer > ul {
+  display: flex;
+  width: 100%;
+}
+#footer > ul > li {
+  width: 25%;
+}
+#footer > ul > li > a {
+  display: inline-block;
+  width: 100%;
+}
+#footer > ul > li > a > img {
+  width: 65px;
+  height: 50px;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  height: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  height: 100%;
+  background: #fff;
+}
+.container #header {
+  background-color: #e6e6e6;
+}
+.container #main {
+  background-color: #fff;
+  height: 100%;
+}
+.container #main > .main {
+  display: flex;
+  height: 100%;
+}
+.container #main > .main > .left {
+  height: 100%;
+  width: 85px;
+}
+.container #main > .main > .left .swiper-slide ul {
+  width: 100%;
+}
+.container #main > .main > .left .swiper-slide ul li {
+  background-color: #e6e6e6;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+}
+.container #main > .main > .left .swiper-slide ul li > a {
+  line-height: 46px;
+}
+.container #main > .main > .left .swiper-slide ul li.active {
+  width: 100%;
+  background-color: #fff;
+}
+.container #main > .main > .left .swiper-slide ul li.active a {
+  color: #f10125;
+}
+.container #main > .main > .right {
+  flex: 1;
+  height: 100%;
+}
+.container #main > .main > .right .swiper-wrapper {
+  height: 100%;
+}
+.container #main > .main > .right .swiper-slide {
+  padding: 0 0 40px 0;
+}
+.container #main > .main > .right .swiper-slide h4 {
+  margin: 10px 0;
+}
+.container #main > .main > .right .swiper-slide ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+.container #main > .main > .right .swiper-slide ul li {
+  width: 33.333%;
+}
+.container #main > .main > .right .swiper-slide ul li > a > img {
+  width: 70px;
+  height: 70px;
+}
+.container #main > .main > .right .swiper-slide ul li > a > span {
+  width: 70px;
+  display: block;
+  text-align: center;
+}
